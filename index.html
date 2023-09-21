@@ -5,40 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>MOVIE RECOMMENDATION</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="home-style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg custom-navbar">
-            <div class="container">
+        <nav class="navbar navbar-expand-xxl navbar-dark bg-dark">
+            <div class="container-fluid">
                 <a class="navbar-brand">Movie Recommendation</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="movie.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownGenres" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Top Genres
+
+
+                        <li class="nav-item dropdown ">
+                            <a href="movie.html" class="btn btn-dark options-bg">
+                                Home
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownGenres">
-                                <a class="dropdown-item" href="#">Adventure</a>
-                                <a class="dropdown-item" href="#">Crime</a>
-                                <a class="dropdown-item" href="#">Comedy</a>
-                            </div>
                         </li>
+
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownGenres" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-dark dropdown-toggle options-bg" data-bs-toggle="dropdown" aria-expanded="false">
                                 Top Actors
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownGenres">
-                                <a class="dropdown-item" href="#">Vijay</a>
-                                <a class="dropdown-item" href="#">Kamal Hasan</a>
-                                <a class="dropdown-item" href="#">Ajith</a>
-                            </div>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Vijay</a></li>
+                                <li><a class="dropdown-item" href="#">Ajith</a></li>
+                                <li><a class="dropdown-item" href="#">Kamal</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-dark dropdown-toggle options-bg" data-bs-toggle="dropdown" aria-expanded="false">
+                                Top Genres
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Comedy</a></li>
+                                <li><a class="dropdown-item" href="#">Romance</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -52,15 +60,8 @@
             <button id="search-button">Go</button>
         </div>
     </div>
-    <footer>        
+    <footer class="container-fluid">        
         <p>&copy; Movie Recommender</p>
     </footer>   
-    
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-er7pLVdwWS1T9bI5Ft6n3Sd4F5r5O5P2w7j3esF/+e9xvAM3AIJLjsw2k6tGhqnpC" crossorigin="anonymous"></script>
-
 </body>
 </html>
-
-
