@@ -15,18 +15,18 @@ header {
     padding: 20px;
     position: fixed;
     width: 100%;
-    z-index: 1; 
+   
     margin-bottom: 680px;
 }
 
 
 footer{
-    background-color: #060606e6;
+    background-color: #212529;
     color:white;
     text-align: center;
     padding: 20px;
     position: fixed;
-    width: 100%;
+    width: 95%;
     margin-top: 700px;
 }
 
@@ -47,14 +47,14 @@ h1 {
     align-items: center;
 }
 
-.container-fluid {
+/* .container-fluid {
     height: 50px;
     font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-}
+} */
 
 .search-container {
     text-align: center;
@@ -82,20 +82,63 @@ h1 {
     background-color: #0056b3;
 }
 
-.custom-navbar{
+/* .custom-navbar{
     background-color: #060606e6;
     width:100%;
-}
+} */
 
-.navbar-brand{
+/* .navbar-brand{
     margin-right: 800px;
-}
+} */
 
-.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
-    display: block;
+.navbar-nav .nav-item.dropdown:click .dropdown-menu {
+    /* display: block; */
     background-color: rgba(195, 130, 2, 0.789);
 }
 
 .navbar-nav .nav-item.dropdown:hover .dropdown-menu :hover{
-    background-color: darkorange;
+    background-color: rgb(163, 111, 47);
+    color: white;
+    font-weight:bold;
+}
+
+/* .dropdown [data-toggle="dropdown"] {
+    display: block;
+  } */
+  
+  /* .dropdown:hover */ .dropdown-menu {
+    display: none;
+    background-color: #212529;
+  }
+  
+  .dropdown.show .dropdown-menu {
+    display: block;
+  }
+
+
+
+  @media (min-width: 1400px) {
+      .navbar-brand {
+          margin-right: 1000px; 
+          margin-left: 100px;
+      }
+  }
+
+
+
+a.dropdown-item{
+    text-align: center;
+    background-color: #212529;
+    color: rgb(47, 219, 219);
+}
+
+.navbar .btn {
+    margin-right: 10px; /* Adjust the value to control the space between buttons */
+    margin-bottom: 10px;
+}
+
+
+.options-bg:hover{
+    background-color: white;
+    color: black;
 }
