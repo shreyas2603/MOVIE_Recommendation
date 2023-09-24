@@ -19,6 +19,17 @@ header {
     margin-bottom: 680px;
 }
 
+select#movie-dropdown {
+    width: 450px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
 
 footer{
     background-color: #060606e6;
