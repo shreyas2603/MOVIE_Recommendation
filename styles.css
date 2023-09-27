@@ -1,5 +1,5 @@
 body {
-    background-image: url("back1.jpg");
+    background-image: url("{{ url_for('static', filename='images/back1.jpg') }}");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -29,6 +29,13 @@ select#movie-dropdown {
     margin-top: 20px;
     display: flex;
     align-items: center;
+}
+
+button#go-button{
+    height: 40px;
+    width: 70px;
+    background-color: #dc3545;
+    border-radius: 10px;
 }
 
 footer{
@@ -109,4 +116,12 @@ h1 {
 
 .navbar-nav .nav-item.dropdown:hover .dropdown-menu :hover{
     background-color: darkorange;
+}
+
+.recommendations {
+    color: white; /* Set the text color to white */
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+    padding: 10px; /* Add some padding to the recommendations */
+    border-radius: 5px; /* Round the corners */
+    margin-top: 10px;
 }
