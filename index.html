@@ -15,8 +15,8 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg custom-navbar">
-            <div class="container">
+        <nav class="navbar navbar-expand-xxl navbar-dark bg-dark">
+            <div class="container-fluid">
                 <a class="navbar-brand">Movie Recommendation</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -24,7 +24,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownGenres" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -58,12 +58,18 @@
                 <input type="text" id="movie-search" name="movie-search" placeholder="Search for a movie">
                 <button type="submit" id="go-button">Go</button>
                 <select multiple size="3" id="movie-dropdown" style="display: none;">
-                    <option value="" selected disabled>Select a Movie</option>
+                    <option selected disabled>Select a Movie</option>
                 </select> 
             </form>                   
             <div id="prediction-result" class="recommendations">
                 {% if prediction %}
-                <p>Prediction: {{ prediction }}</p>
+                <p>Here are some movies you might enjoy : </p>
+                <hr>
+                <ul>
+                    {% for movie in prediction %}
+                    <li>{{ movie }}</li>
+                    {% endfor %}
+                </ul>
                 {% endif %}
             </div>
         </div>
